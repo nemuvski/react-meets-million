@@ -1,5 +1,6 @@
 import { resolve } from 'node:path'
 import react from '@vitejs/plugin-react'
+import million from 'million/compiler'
 import { defineConfig } from 'vite'
 import eslintPlugin from 'vite-plugin-eslint'
 import { createHtmlPlugin } from 'vite-plugin-html'
@@ -31,6 +32,7 @@ export default defineConfig(({ mode }) => {
       pure: esbuildPure,
     },
     plugins: [
+      million.vite(),
       react(),
       eslintPlugin(),
       createHtmlPlugin({

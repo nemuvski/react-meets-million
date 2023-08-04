@@ -31,7 +31,7 @@ module.exports = {
     '@typescript-eslint/ban-ts-comment': ['error', { 'ts-ignore': 'allow-with-description' }],
     '@typescript-eslint/consistent-type-imports': 'error',
     'react/prop-types': 'off',
-    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/rules-of-hooks': 'off',
     'react-hooks/exhaustive-deps': 'warn',
     'import/order': [
       'warn',
